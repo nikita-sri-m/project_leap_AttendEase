@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AttendEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>AttendEase</h1>
+
+<h2>Add Student</h2>
+
+<input type="text" id="name" placeholder="Name">
+<input type="text" id="email" placeholder="Email">
+
+<button onclick="addStudent()">Add Student</button>
+
+<h2>Students</h2>
+
+<button onclick="loadStudents()">View Students</button>
+
+<ul id="studentList"></ul>
+
+<h2>Attendance Percentage</h2>
+
+<input type="number" id="studentId" placeholder="Student ID">
+
+<button onclick="getPercentage()">
+    Check Percentage
+</button>
+
+<p id="percentageResult"></p>
+
+<h2>Students Below Threshold</h2>
+
+<input type="number" id="threshold" placeholder="Enter Percentage">
+
+<button onclick="getBelowThreshold()">
+    Check
+</button>
+
+<ul id="belowList"></ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
